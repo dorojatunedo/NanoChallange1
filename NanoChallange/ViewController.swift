@@ -53,6 +53,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var purple3: UIImageView!
     @IBOutlet weak var purple2: UIImageView!
     
+    @IBOutlet weak var player: UILabel!
     @IBOutlet weak var StartAgain: UIButton!
     var greenname = ""
     var redname = ""
@@ -111,6 +112,7 @@ class ViewController: UIViewController {
         PurpleScore.isHidden = true
         
         StartAgain.isHidden = true
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func Done(_ sender: Any) {
@@ -161,6 +163,8 @@ class ViewController: UIViewController {
         RedScore.isHidden = true
         YellowScore.isHidden = true
         PurpleScore.isHidden = true
+        
+        player.isHidden = true
         
     }
     
@@ -244,11 +248,6 @@ class ViewController: UIViewController {
             YellowScore.text = "\(scoreyellow)"
             PurpleScore.text = "\(scorepurple)"
             
-            GreenScore.isHidden = false
-            RedScore.isHidden = false
-            YellowScore.isHidden = false
-            PurpleScore.isHidden = false
-            
             
             if ( no >= names.count )
             {
@@ -329,7 +328,12 @@ class ViewController: UIViewController {
                                {
                                    purple4.isHidden = false
                                }
-    
+
+                GreenScore.isHidden = false
+                RedScore.isHidden = false
+                YellowScore.isHidden = false
+                PurpleScore.isHidden = false
+
                 if(noq >= question.count)
                 {
                     noq = 0
@@ -337,6 +341,8 @@ class ViewController: UIViewController {
                 Question.text = question[noq]
             }
             NameTag.text = names[no]
+            
+            
             
             
             }
