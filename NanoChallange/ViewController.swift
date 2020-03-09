@@ -157,6 +157,10 @@ class ViewController: UIViewController {
         
         names = [ greenname,redname,yellowname,purplename]
         
+        GreenScore.isHidden = true
+        RedScore.isHidden = true
+        YellowScore.isHidden = true
+        PurpleScore.isHidden = true
         
     }
     
