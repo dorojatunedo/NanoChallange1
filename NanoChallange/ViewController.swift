@@ -123,6 +123,11 @@ class ViewController: UIViewController {
         DoneButton.isHidden = true
         Done2Button.isHidden = false
         
+        GreenScore.isHidden = false
+        RedScore.isHidden = false
+        YellowScore.isHidden = false
+        PurpleScore.isHidden = false
+        
         
     }
     @IBAction func Done2(_ sender: Any) {
